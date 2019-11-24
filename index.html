@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--https://www.w3schools.com/css/css_positioning.asp-->
+<!--https://stackoverflow.com/questions/27138480/position-image-in-bottom-center-of-page-css-->
+<!--https://stackoverflow.com/questions/2570877/how-do-i-stick-an-image-to-the-bottom-of-the-visible-screen-and-be-centered-->
+<!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image-->
+<!--https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-css-->
+<!--https://www.w3schools.com/w3css/w3css_slideshow.asp-->
+<html>
+  <head>
+    <title>Class Notebook</title>
+    <style>
+      .menu{
+        list-style-type: none;
+        margin: 0;
+        padding 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      li{
+
+        display: inline;
+      }
+
+      li a{
+        display: inline;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        font-family: Arial Black;
+      }
+      li a:hover{
+        background-color: red;
+
+      }
+      .active {
+        background-color: red;
+      }
+      body {
+        background-color :#f5f5f5;
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+        font-family: Arial;
+      }
+      h1 {
+        color: #cd0000;
+        font-size: 42px;
+        letter-spacing: -2px;
+        text-align: center;
+        font-family: Arial Black;
+      }
+      h2 {
+        color: #cd0000;
+        font-size: 32px;
+        letter-spacing: -2px;
+        text-align: center;
+        font-family: Arial Black;
+      }
+      .images{
+
+        float: left;
+        width:  100px;
+        height: 300px;
+        background-position: 50% 50%;
+        background-repeat:   no-repeat;
+        background-size:     cover;
+      }
+      .hisd{
+    position: fixed;
+
+    bottom:10px;
+    left: 32%;
+
+
+
+
+
+}
+.bhs{
+position: fixed;
+
+bottom:10px;
+left: 60%;
+
+
+
+
+
+}
+    </style>
+  </head>
+  <center>
+  <body>
+    <h1>Integrated Physics and Chemistry</h1>
+
+    <ul class = "menu">
+      <li><a class = "active" href ="">Home</a></li>
+      <li><a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Calendar\calendar.html">Calendar</a></li>
+      <li><a href = "C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Class_Notebook.html">Class Notebook</a></li>
+      <li><a href = "C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Contact Me\contact_me.html">Contact Me</a></li>
+    </ul>
+
+    <br />
+    <br />
+<!--https://www.publicdomainpictures.net/en/hledej.php?x=0&y=0&hleda=ions-->
+
+    <div style="max-width:500px">
+      <img class ="images" src ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\calculator-scientific.jpg"style ="width:100%">
+      <img class ="images" src ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\chemicals.jpeg"style ="width:100%">
+      <img class ="images" src ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\flash-tesla-coil-experiment-high-voltage-68481.jpeg"style ="width:100%">
+      <img class ="images" src ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\lab equipment.jpeg"style ="width:100%">
+      <img class ="images" src ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\newton-s-cradle-balls-sphere-action-60582.jpeg"style ="width:100%">
+      <img class ="images" src ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\test-tubes.jpg"style ="width:100%">
+    </div>
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("images");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <table>
+      <tr>
+        <td>
+          <a href="https://www.houstonisd.org/">
+          <img class ="hisd" border="0"  src="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\logo.png" width="125" height="125">
+
+        </td>
+        <td>
+          <a href="https://www.houstonisd.org/bellairehigh">
+          <img class ="bhs" border="0"  src="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\bellairehigh.png" width="150" height="150">
+
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+</center>
+</html>
