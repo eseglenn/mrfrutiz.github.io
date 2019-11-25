@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+<!--The following links were used to plan how to position different tags using CSS-->
 <!--https://www.w3schools.com/css/css_positioning.asp-->
 <!--https://stackoverflow.com/questions/27138480/position-image-in-bottom-center-of-page-css-->
 <!--https://stackoverflow.com/questions/2570877/how-do-i-stick-an-image-to-the-bottom-of-the-visible-screen-and-be-centered-->
+
+<!--The following links were used to make the Bellaire High School Logo a link-->
+<!--The Bellaire High School Logo is a property of the Houston Independent School District-->
 <!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image-->
+
+<!--The following links were used to make the slideshow-->
+<!--The images for the slideshow came from Pexel.com. This website hosts public domain images that can be shown without attribution-->
 <!--https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-css-->
 <!--https://www.w3schools.com/w3css/w3css_slideshow.asp-->
+
  <html>
   <head>
     <title>BHS IPC Home</title>
@@ -116,6 +124,12 @@
       <img class ="images" src ="test-tubes.jpg"style ="width:100%">
     </div>
 
+    <!--The following script came from w3Schools tutorial on making an animated carousel of images. It works by making an array of images
+    from the class name "images". Two functions make the carousel work. The first is the carousel function that displays an image at the 
+    index equal to myIndex-1. The variable myIndex is incremented each time the carousel function is called. If myIndex is larger
+    than the size of the array then it is reset to 1. 
+    The second important function is the Window setTimeout() method. It is passed a function and a time period in which it calls
+    the function again. We pass it the function carousel() so that the images are displayed every 2000 milliseconds.-->
     <script>
     var myIndex = 0;
     carousel();
